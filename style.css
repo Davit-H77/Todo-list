@@ -1,0 +1,111 @@
+body {
+    background: #139fd6;
+    background: linear-gradient(90deg, rgba(19, 159, 214, 1) 12%, rgba(22, 161, 210, 1) 0%, rgba(87, 199, 133, 1) 66%, rgba(255, 241, 112, 1) 100%);
+    padding: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+h1 {
+    color: #121723;
+    font-size: 36px;
+    font-weight: 400;
+
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+}
+
+#taskbtn {
+    padding: 10px;
+    background-color: #89ff8a;
+    margin-left: 10px;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+    background: #139fd6;
+    background: linear-gradient(90deg, rgba(19, 159, 214, 1) 12%, rgba(22, 161, 210, 1) 0%, rgba(87, 199, 133, 1) 66%, rgba(255, 241, 112, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    border: 2px solid white;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.TODO {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 750px;
+    background-color: white;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    background-image: url(https://img.freepik.com/premium-photo/list-concept-wooden-background-with-empty-notebook-planning-new-year-goal-list-strategy-top-view-photo_526934-4135.jpg);
+    background-size: 750px;
+}
+
+
+#taskslist {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.delete {
+    background-color: #ff4949;
+    height: 25px;
+    width: 33px;
+    border: 1px solid white;
+
+
+}
+
+.completedbtn {
+    background-color: #89ff8a;
+    height: 25px;
+    width: 33px;
+    border: 1px solid white;
+}
+
+.completed {
+    background: #EAEAEA;
+    transition: 0.5s ease;
+
+    .completedbtn {
+        background-color: #EAEAEA;
+    }
+
+    opacity: 0.7;
+}
+
+#deleteall {
+    background-color: #ff0000;
+    padding: 5px 0;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 5px;
+    width: 65px;
+    margin-left: 15px;
+    color: white;
+
+}
+
+#taskCount {
+    font-weight: 700;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+}
