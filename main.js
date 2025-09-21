@@ -1,11 +1,9 @@
 let tasks = []
 
-function addTask(task) {
-
-    tasks.push({ text: task, completed: false })
-    renderTasks()
-
-
+function addTask(task){
+  if(task.trim() === "") return
+  tasks.push({text: task, completed: false})
+  renderTasks()
 }
 
 function deleteTask(index) {
@@ -46,7 +44,7 @@ function renderTasks() {
         li.innerHTML = `<span>${task.text}</span>
          <button class = "completedbtn" onClick ="toggleTask(${index})">✅</button>
         <button class = "delete" onClick ="deleteTask(${index})">🗑️</button>
-        <button onClick = "editTask(${index})">✎</button>`
+        <button class ="editbtn" onClick = "editTask(${index})">✏️</button>`
 
         taskslist.appendChild(li)
     }
